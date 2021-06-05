@@ -17,7 +17,7 @@ binance = ccxt.binance({
     'secret': os.getenv("BINANCE_SECRET"),
 })
 
-balance = binance.fetch_balance()["BTC"]["free"] / 4
+balance = binance.fetch_balance()["BTC"]["free"] * 0.95
 
 print(f"Will trade with {balance} available BTC.")
 token = input("Enter the token name: ")

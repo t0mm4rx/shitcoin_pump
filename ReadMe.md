@@ -1,10 +1,20 @@
 # Shitcoin pump
 
-This script will:
-- create a market buy orders
-- place sell limit orders at given take_profits levels (in percentage)
+## What is it
 
+This script has been created to beat the average participant in organized shitcoin pumps.
+
+It will market buy, then create limit sell orders at given price levels.
+
+It's working on Binance but it's spot trading so you can change the exchange really easily.
+
+It's working with BTC pairs, again it's easy to adapt.
+
+## How to use?
+
+You can define the percentage levels you want to sell in the take_profits array.
 For example:
+
 ```python
 # In main.py
 take_profits = [
@@ -27,3 +37,18 @@ BINANCE_SECRET={{API_SECRET}}
 ```
 
 Will trade in spot, with all BTC available.
+
+
+
+The script will wait for your input to run, so if you participate in a pump:
+
+- Split your screen with your terminal and pump group side by side
+
+- Before the token anouncement, run the script
+
+  ```sh
+  python3 main.py
+  ```
+
+- When the token is announced you just have to type the token name in the prompt and hit enter
+- Enjoy being rich (I hope so)
